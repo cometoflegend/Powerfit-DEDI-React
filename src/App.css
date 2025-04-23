@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
-}
+ .overlay-text {
+        /* chorizado de github pero queda muy bonito */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        /* Transparent background for text */
+        padding: 20px;
+        border-radius: 5px;
+    }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+    .image-container {
+        position: relative;
+        display: inline-block;
+    }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+    .bg-darker {
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+        background-color: #0d0f10;
 
-.App-link {
-  color: #61dafb;
-}
+    }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+    .bg-darker-div {
+
+        background-color: #0d0f10;
+        height: 20px;
+
+    }
+
+    div#dividerContainer {
+        height: 160px;
+        align-items: flex-end;
+        display: flex;
+
+    }
+
+    .left {
+
+        text-align: left;
+        margin-left: 70px;
+
+    }
+
+    .footer-divider {
+
+        position: relative;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+
+    }
+
+    footer {
+        color: white;
+        padding: 1%;
+    }
+
+    .footerTitle,
+    .horizontalMenuList,
+    .socialNetworks {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footerTitle {
+        font-size: 200%;
+    }
+
+    .horizontalMenuList li,
+    .socialNetworks li {
+        list-style-type: none;
+        padding-left: 1%;
+        padding-right: .5%;
+        cursor: pointer;
+    }
+
+    .horizontalMenuList li:hover {
+        transition: ease-in-out 0.5s;
+        color: rgb(209, 209, 209);
+    }
