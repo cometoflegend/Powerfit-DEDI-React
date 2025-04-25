@@ -1,14 +1,3 @@
-/*
-
-Lista de cosas a añadir:
-- Importar react
-- Importar los archivos
-- export default ComplexInfo
-
-Lista de cosas a modificar:
-- Toda instancia de class a className
-- Toda instancia de imagen a esto: <img src={idImagen} className="img-fluid rounded-top" alt=""/> */
-
 import React from "react";
 import check from "../img/assets_index/check.png";
 import groupmini from "../img/assets_index/group.png";
