@@ -5,35 +5,35 @@ const Navbar = () => {
     return (
     <nav className="navbar navbar-expand-sm bg-dark navbar-dark">
         
-        <div className="collapse navbar-collapse justify-content-end container-fluid">
+        <div className="container-fluid">
 
-        <img src={logo} width="100px" class="logo" alt=""/>
+        <img src={logo} width="100px" className="logo" alt=""/>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span className="navbar-toggler-icon"></span>
             </button>
-            <div className="collapse navbar-collapse" id="collapsibleNavbar">
+            <div className="collapse navbar-collapse justify-content-right container-fluid" id="collapsibleNavbar">
 
-                <ul className="navbar-nav me-4">
-                    <li className="nav-item dropdown">
+                <ul className="navbar-nav ms-4">
+                    <li className="nav-item dropdown ms-auto">
                         <a className="nav-link dropdown-link whiteText" role="button" href="#">Home</a>
                     </li>
-                    <li className="nav-item dropdown">
+                    <li className="nav-item dropdown ms-auto">
                         <a className="nav-link dropdown-toggle whiteText" role="button" href="#"
                             data-bs-toggle="dropdown">Servicios</a>
 
-                        <ul className="dropdown-menu">
+                        <ul className="dropdown-menu ms-auto">
                             <li><a className="dropdown-item" href="cursos.js" role="button">Cursos</a></li>
                             <li><a className="dropdown-item" href="maquinas.js" role="button">Máquinas</a></li>
                         </ul>
                     </li>
-                    <li className="nav-item dropdown">
+                    <li className="nav-item dropdown ms-auto">
                         <a className="nav-link dropdown-link whiteText" role="button" href="cuotas.js">Cuotas</a>
                     </li>
-                    <li className="nav-item dropdown">
+                    <li className="nav-item dropdown ms-auto">
                         <a className="nav-link dropdown-link whiteText" role="button" href="reservas.js">Reservas</a>
                     </li>
-                    <li className="nav-item dropdown">
+                    <li className="nav-item dropdown ms-auto">
                         <a className="nav-link dropdown-link whiteText" role="button" href="contacto.js">Contacto</a>
                     </li>
                 </ul>
